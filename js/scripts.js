@@ -76,7 +76,6 @@ function restarTiempo()
         nivel++;
         miNivel.innerText = 0;
         document.getElementById('tiempo').innerText = tiempo;
-        alert("Ganaste");
         puntos = 0;
     }
     
