@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.2s;
+}
+body {
+  background: #222;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  line-height: 120%;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+.contenedor {
+  display: inline-block;
+  border: 5px dashed #be2238;
+  margin: 2rem auto;
+  width: auto;
+}
+.carteles {
+  background: #aaa;
+  padding: 5px;
+  border-bottom: 5px dashed #be2238;
+}
+.carteles strong,
+.carteles span {
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+}
+.area {
+  background: #aaa;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.tooltip {
+  color: #fff;
+  font-size: 16px;
+  vertical-align: middle;
+  position: absolute;
+  background: #444;
+  width: 180px;
+  height: 70px;
+  top: -90px;
+  left: -65px;
+  padding: 7px;
+  line-height: 150%;
+}
+.tooltip:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 80px;
+  border: 20px solid transparent;
+  border-top-color: #444;
+  border-left-width: 10px;
+  border-right-width: 10px;
+}
+#jugador {
+  background: #cb2d20;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(100% / 2 - 25px);
+  left: calc(100% / 2 - 25px);
+}
+#jugador:hover,
+#jugador:active {
+  cursor: pointer;
+  background: #be2238;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+// Variables
+$borde = rgb(190,34,56)
+$fondo = #444
+$fondo-oscuro = #222
+$fondo-claro = #aaa
+$fuente-color = $fondo
+$jugador = rgb(203,45,32)
+$blanco = #fff
+
+*
+    padding 0
+    margin 0
+    box-sizing border-box
+    transition all ease-in-out 0.2s
+    
+
+body
+    background $fondo-oscuro
+    font-family 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    line-height 120%
+    font-size 18px
+    color $fuente-color
+    text-align center
+
+.contenedor
+    display inline-block
+    border 5px dashed $borde
+    margin 2rem auto
+    width auto
+
+.carteles
+    background $fondo-claro
+    padding 5px
+    border-bottom 5px dashed $borde
+
+    strong
+    span
+        display inline-block
+        text-align center
+        margin 0 5px
+
+.area
+    background $fondo-claro
+    width 500px
+    height 500px
+    position relative
+
+.tooltip
+    color $blanco
+    font-size 16px
+    vertical-align middle
+    position absolute
+    background $fondo
+    width 180px
+    height 70px
+    top -90px
+    left -65px
+    padding 7px
+    line-height 150%
+    &:before
+        content ""
+        position absolute
+        bottom -40px
+        left 80px
+        border 20px solid transparent
+        border-top-color $fondo
+        border-left-width 10px
+        border-right-width 10px
+
+
+#jugador
+    background $jugador
+    width 50px
+    height 50px
+    border-radius: 50%
+    position absolute
+    top calc(100% / 2 - 25px)
+    left calc(100% / 2 - 25px)
+    &:hover
+    &:active
+        cursor pointer
+        background $borde
